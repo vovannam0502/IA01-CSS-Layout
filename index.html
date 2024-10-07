@@ -3,9 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dealers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- link file style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    Hello World!
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header>
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Left Section: Logo and Navigation -->
+            <div class="flex flex-col">
+                <!-- Logo -->
+                <div class="font-yellowtail text-8xl mt-8">Dealers</div>
+        
+                <!-- Navigation -->
+                <nav class="flex items-center space-x-3 mt-2">
+                    <a href="#" class="text-black-600 font-bold">Home</a>
+                    <span class="text-black-600 mx-2">|</span>
+                    <a href="#" class="text-black-600 font-bold">About</a>
+                    <span class="text-black-600 mx-2">|</span>
+                    <a href="#" class="text-black-600 font-bold">All Deals</a>
+                    <span class="text-black-600 mx-2">|</span>
+                    <a href="#" class="text-black-600 font-bold">Submit Your Deal</a>
+                    <span class="text-black-600 mx-2">|</span>
+                    <img src="./images/envelop.png" 
+                    alt="Envelope" class="w-6 h-6 inline-block  ">
+                </nav>
+                
+            </div>
+        
+            <!-- Right Section: Image -->
+            <div class="mt-4 p-4 bg-white shadow-md border-t-8 border-red-500 relative mt-8">
+                <!-- Envelope Pattern (Optional) 
+                <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-red-500 via-blue-500 to-red-500"></div>-->
+            
+                <!-- Sign up Title -->
+                <h2 class="text-lg font-bold mb-4">Sign up for free to get deals directly to your mailbox</h2>
+            
+                <!-- Subscription Form -->
+                <form class="flex space-x-2">
+                    <input type="email" placeholder="Enter Your E-mail Address" class="border border-gray-300 px-2 py-1 w-2/3">
+                    <button class="bg-gray-300 text-white px-2 py-1">Subscribe Me</button>
+                </form>
+
+            </div>
+        </div>
+    </header>
+    
+    <div class="container mx-auto mt-12 bg-white p-6 shadow-md">
+        <!-- Main Deal Section -->
+        <section class="container mx-4 mt-2">
+            <div class="grid grid-cols-3 gap-6">
+            <!-- Deal Info -->
+            <div class="col-span-2">
+                <h1 class="text-4xl font-semibold mb-8">This is one very amazing deal</h1>
+                <div class="bg-red-400 h-96 mb-6 border-8 border-white shadow-lg"></div>
+                <p class="text-gray-600 mt-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <!-- Deal Details -->
+            <div class="bg-white p-6 shadow-md mx-8">
+                <div class="mb-4 text-xl font-bold text-center text-gray-600">This deal will end in:</div>
+                <div class="text-xl font-bold mb-6 text-center">6 days 1 hr 52 min 51 sec</div>
+                <div class="text-xl font-bold text-gray-600 mb-6 text-center">Discount</div>
+                <div class="text-8xl font-bold text-gray-800 mb-6 text-center">43%</div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="text-lg mb-2 text-center">
+                        Deal Value <br>
+                        <span class="font-bold text-center">$47</span>
+                    </div>
+                    <div class="text-lg mb-2 text-center">
+                        You Save<br>
+                        <span class="font-bold text-center">$20</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6 mt-4">
+                    <div class="text-center">
+                        <button class="bg-gray-300 p-2 rounded"><i class="fab fa-twitter"></i> Tweet</button>
+                    </div>
+            
+                    <div class="text-center">
+                        <button class="bg-gray-300 p-2 rounded"><i class="fab fa-facebook"></i> Like</button>
+                    </div>
+                </div>
+
+
+                <button class="bg-green-500 text-white py-3 px-6 rounded mt-6 w-full">Buy this deal - 27$</button>
+            </div>
+            </div>
+        </section>
+
+    <!-- Additional Deals Section -->
+        <section class="container mx-auto mt-10">
+            <div class="grid grid-cols-3 gap-6">
+            <!-- Single Deal -->
+            <div class="bg-white p-4 shadow-md text-center">
+                <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
+                <div class="bg-red-400 h-32 mb-4"></div>
+                <div class="text-gray-600 text-sm">Deal Value $47</div>
+                <div class="text-gray-600 text-sm">Discount 43%</div>
+                <div class="text-gray-600 text-sm mb-4">You Save $20</div>
+                <button class="bg-green-500 text-white py-2 px-4 rounded">See Deal</button>
+            </div>
+
+            <!-- Repeat similar deal blocks -->
+            <div class="bg-white p-4 shadow-md text-center">
+                <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
+                <div class="bg-red-400 h-32 mb-4"></div>
+                <div class="text-gray-600 text-sm">Deal Value $47</div>
+                <div class="text-gray-600 text-sm">Discount 43%</div>
+                <div class="text-gray-600 text-sm mb-4">You Save $20</div>
+                <button class="bg-green-500 text-white py-2 px-4 rounded">See Deal</button>
+            </div>
+
+            <div class="bg-white p-4 shadow-md text-center">
+                <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
+                <div class="bg-red-400 h-32 mb-4"></div>
+                <div class="text-gray-600 text-sm">Deal Value $47</div>
+                <div class="text-gray-600 text-sm">Discount 43%</div>
+                <div class="text-gray-600 text-sm mb-4">You Save $20</div>
+                <button class="bg-green-500 text-white py-2 px-4 rounded">See Deal</button>
+            </div>
+
+            </div>
+        </section>
+
+        <div class="container mx-auto grid grid-cols-3 gap-6">
+            <div>
+                <h2 class="text-lg font-semibold mb-4">About Our Deals</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div>
+                <h2 class="text-lg font-semibold mb-4">Twitter Buzz</h2>
+                <p class="text-gray-600">7 Photoshop tips for designing clean and modern websites.</p>
+            </div>
+            <div>
+                <h2 class="text-lg font-semibold mb-4">Other Pages</h2>
+                <ul>
+                <li><a href="#" class="text-gray-600">Home</a></li>
+                <li><a href="#" class="text-gray-600">About Our Deals</a></li>
+                <li><a href="#" class="text-gray-600">All Deals</a></li>
+                <li><a href="#" class="text-gray-600">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+  <!-- Footer Section -->
+    <footer class="mt-10 py-6 text-center">
+        <p>
+            Copyright Information Goes Here 2012. All Rights Reserved.<br>
+            Designed by <strong class="font-bold">Themes Kingdom</strong>
+        </p>
+    </footer>
 </body>
 </html>

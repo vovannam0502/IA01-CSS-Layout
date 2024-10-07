@@ -1,0 +1,9 @@
+.font-yellowtail {
+    font-family: 'Yellowtail', cursive;
+}
+
+.rotate {
+    display: inline-block; /* Cần có display inline-block để transform hoạt động đúng */
+    transform: rotate(90deg); /* Xoay chữ 90 độ */
+    transform-origin: center; /* Đặt gốc xoay ở trung tâm */
+}
