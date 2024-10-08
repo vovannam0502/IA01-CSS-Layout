@@ -6,6 +6,7 @@
     <title>Dealers</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- link file style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -36,18 +37,11 @@
         
             <!-- Right Section: Image -->
             <div class="mt-4 p-4 bg-white shadow-md border-t-8 border-red-500 relative mt-8">
-                <!-- Envelope Pattern (Optional) 
-                <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-red-500 via-blue-500 to-red-500"></div>-->
-            
-                <!-- Sign up Title -->
                 <h2 class="text-lg font-bold mb-4">Sign up for free to get deals directly to your mailbox</h2>
-            
-                <!-- Subscription Form -->
                 <form class="flex space-x-2">
                     <input type="email" placeholder="Enter Your E-mail Address" class="border border-gray-300 px-2 py-1 w-2/3">
                     <button class="bg-gray-300 text-white px-2 py-1">Subscribe Me</button>
                 </form>
-
             </div>
         </div>
     </header>
@@ -56,100 +50,200 @@
         <!-- Main Deal Section -->
         <section class="container mx-4 mt-2">
             <div class="grid grid-cols-3 gap-6">
-            <!-- Deal Info -->
-            <div class="col-span-2">
-                <h1 class="text-4xl font-semibold mb-8">This is one very amazing deal</h1>
-                <div class="bg-red-400 h-96 mb-6 border-8 border-white shadow-lg"></div>
-                <p class="text-gray-600 mt-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-
-            <!-- Deal Details -->
-            <div class="bg-white p-6 shadow-md mx-8">
-                <div class="mb-4 text-xl font-bold text-center text-gray-600">This deal will end in:</div>
-                <div class="text-xl font-bold mb-6 text-center">6 days 1 hr 52 min 51 sec</div>
-                <div class="text-xl font-bold text-gray-600 mb-6 text-center">Discount</div>
-                <div class="text-8xl font-bold text-gray-800 mb-6 text-center">43%</div>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="text-lg mb-2 text-center">
-                        Deal Value <br>
-                        <span class="font-bold text-center">$47</span>
-                    </div>
-                    <div class="text-lg mb-2 text-center">
-                        You Save<br>
-                        <span class="font-bold text-center">$20</span>
-                    </div>
+                <!-- Deal Info -->
+                <div class="col-span-2">
+                    <h1 class="text-4xl font-semibold mb-8">This is one very amazing deal</h1>
+                    <div class="bg-red-400 h-96 mb-6 border-8 border-white shadow-lg"></div>
                 </div>
+
+                <!-- Deal Details -->
+                <div class="bg-white p-6 mx-8" style="background-image: url('images/stamp.png');
+                background-size: 100% 100%; background-position: center; background-repeat: no-repeat;">
+                    <div class="mt-4 mb-1 text-xl font-bold text-center text-gray-600">This deal will end in:</div>
+                    <div class="flex flex-col items-center mt-4">
+                        <hr class="border-t-2 border-gray-200 w-full">
+                        <hr class="border-t-2 border-gray-200 w-full mt-1">
+                    </div>
+                    <div class="text-xl font-bold mt-3 mb-3 text-center">6 days 1 hr 52 min 51 sec</div>
+                    <div class="flex flex-col items-center">
+                        <hr class="border-t-2 border-gray-200 w-full">
+                        <hr class="border-t-2 border-gray-200 w-full mt-1">
+                    </div>
+                    <div class="text-xl font-bold text-gray-600 mt-2 text-center">Discount</div>
+                    <div class="text-8xl font-bold text-gray-800 mb-4 text-center">43%</div>
+                    <hr class="border-t-2 border-dashed border-gray-200 mx-4 mb-2">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-lg mb-2 text-center">
+                            Deal Value <br>
+                            <span class="font-bold text-center">$47</span>
+                        </div>
+                        <div class="text-lg mb-2 text-center">
+                            You Save<br>
+                            <span class="font-bold text-center">$20</span>
+                        </div>
+                    </div>
+                    <hr class="border-t-2 border-dashed border-gray-200 mx-4">
+                    <div class="grid grid-cols-2 gap-6 mt-4">
+                        <div class="text-center">
+                            <button class="bg-gray-300 p-2 rounded"><i class="fab fa-twitter"></i> Tweet</button>
+                        </div>
                 
-                <div class="grid grid-cols-2 gap-6 mt-4">
-                    <div class="text-center">
-                        <button class="bg-gray-300 p-2 rounded"><i class="fab fa-twitter"></i> Tweet</button>
-                    </div>
-            
-                    <div class="text-center">
-                        <button class="bg-gray-300 p-2 rounded"><i class="fab fa-facebook"></i> Like</button>
+                        <div class="text-center">
+                            <button class="bg-gray-300 p-2 rounded"><i class="fab fa-facebook"></i> Like</button>
+                        </div>
                     </div>
                 </div>
-
-
-                <button class="bg-green-500 text-white py-3 px-6 rounded mt-6 w-full">Buy this deal - 27$</button>
             </div>
+
+            <div class="grid grid-cols-3 gap-6">
+                <div class="col-span-2">
+                    <p class="text-gray-600 mt-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <button class="bg-lime-600 text-lime-950 font-bold text-xl py-2 px-4 w-4/5" style="border-radius: 16px;">
+                        Buy this deal - 27$
+                    </button>
+                </div>
             </div>
         </section>
 
+        <hr class="border-t-2 border-dashed border-gray-300 mx-4 my-8">
+
+        <div class="flex justify-between w-full mx-4">
+            <!-- font yellowtail -->
+            <span class="flex-1 text-center font-yellowtail text-4xl text-gray-400">Dealers</span>
+            <span class="flex-1 text-center font-bebas-neue text-4xl text-gray-400">THEME KINGDOM</span>
+            <span class="flex-1 text-center text-4xl text-gray-400">DovesMedic</span>
+            <span class="flex-1 text-center font-bebas-neue text-4xl text-gray-400">THEME KINGDOM</span>
+            <span class="flex-1 text-center text-4xl text-gray-400">sm</span>
+        </div>
+
+        <hr class="border-t-2 border-dashed border-gray-300 mx-4 my-8">
+
     <!-- Additional Deals Section -->
-        <section class="container mx-auto mt-10">
+        <section class="container mx-auto">
             <div class="grid grid-cols-3 gap-6">
-            <!-- Single Deal -->
-            <div class="bg-white p-4 shadow-md text-center">
-                <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
-                <div class="bg-red-400 h-32 mb-4"></div>
-                <div class="text-gray-600 text-sm">Deal Value $47</div>
-                <div class="text-gray-600 text-sm">Discount 43%</div>
-                <div class="text-gray-600 text-sm mb-4">You Save $20</div>
-                <button class="bg-green-500 text-white py-2 px-4 rounded">See Deal</button>
-            </div>
+                <!-- Single Deal -->
+                <div class="bg-white p-4 text-left">
+                    <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
+                    <div class="border-2 border-gray-100 p-1 mb-4">
+                        <div class="bg-red-400 h-48 border-2 border-white"></div>
+                        <div class="grid grid-cols-3 gap-4 mt-4 text-center">
+                            <div class="text-gray-600 text-sm">Deal Value<br>$47</div>
+                            <div class="text-gray-600 text-sm">Discount<br>43%</div>
+                            <div class="text-gray-600 text-sm mb-3">You Save<br>$20</div>
+                        </div>
+                    </div>
 
-            <!-- Repeat similar deal blocks -->
-            <div class="bg-white p-4 shadow-md text-center">
-                <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
-                <div class="bg-red-400 h-32 mb-4"></div>
-                <div class="text-gray-600 text-sm">Deal Value $47</div>
-                <div class="text-gray-600 text-sm">Discount 43%</div>
-                <div class="text-gray-600 text-sm mb-4">You Save $20</div>
-                <button class="bg-green-500 text-white py-2 px-4 rounded">See Deal</button>
-            </div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="col-span-2 text-center">
+                            71 days 23 hrs 38 min 36 sec
+                        </div>
+                        <div class="text-center">
+                            <button class="bg-green-500 text-white py-1 px-4 rounded">See Deal</button>
+                        </div>
+                    </div>
 
-            <div class="bg-white p-4 shadow-md text-center">
-                <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
-                <div class="bg-red-400 h-32 mb-4"></div>
-                <div class="text-gray-600 text-sm">Deal Value $47</div>
-                <div class="text-gray-600 text-sm">Discount 43%</div>
-                <div class="text-gray-600 text-sm mb-4">You Save $20</div>
-                <button class="bg-green-500 text-white py-2 px-4 rounded">See Deal</button>
-            </div>
+                </div>
 
+                <!-- Repeat Deal -->
+                <div class="bg-white p-4 text-left">
+                    <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
+                    <div class="border-2 border-gray-100 p-1 mb-4">
+                        <div class="bg-red-400 h-48 border-2 border-white"></div>
+                        <div class="grid grid-cols-3 gap-4 mt-4 text-center">
+                            <div class="text-gray-600 text-sm">Deal Value<br>$47</div>
+                            <div class="text-gray-600 text-sm">Discount<br>43%</div>
+                            <div class="text-gray-600 text-sm mb-3">You Save<br>$20</div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="col-span-2 text-center">
+                            71 days 23 hrs 38 min 36 sec
+                        </div>
+                        <div class="text-center">
+                            <button class="bg-green-500 text-white py-1 px-4 rounded">See Deal</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-white p-4 text-left">
+                    <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
+                    <div class="border-2 border-gray-100 p-1 mb-4">
+                        <div class="bg-red-400 h-48 border-2 border-white"></div>
+                        <div class="grid grid-cols-3 gap-4 mt-4 text-center">
+                            <div class="text-gray-600 text-sm">Deal Value<br>$47</div>
+                            <div class="text-gray-600 text-sm">Discount<br>43%</div>
+                            <div class="text-gray-600 text-sm mb-3">You Save<br>$20</div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="col-span-2 text-center">
+                            71 days 23 hrs 38 min 36 sec
+                        </div>
+                        <div class="text-center">
+                            <button class="bg-green-500 text-white py-1 px-4 rounded">See Deal</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+            
         </section>
 
         <div class="container mx-auto grid grid-cols-3 gap-6">
-            <div>
-                <h2 class="text-lg font-semibold mb-4">About Our Deals</h2>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <div class="mx-4">
+                <hr class="border-t-2 border-dashed border-gray-300 my-8">
+                <h2 class="text-lg font-bold mb-4">About Our Deals</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est sequi voluptas laboriosam, veritatis atque fugit blanditiis non voluptatum ducimus sint ea error aut rem beatae distinctio repellat temporibus officiis expedita!</p>
+                <br>
+                <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum at quas, vitae aliquid libero consequatur beatae, facere perspiciatis ea adipisci quis ducimus repellendus in animi velit mollitia, magni dolores nobis!</p>
             </div>
-            <div>
-                <h2 class="text-lg font-semibold mb-4">Twitter Buzz</h2>
-                <p class="text-gray-600">7 Photoshop tips for designing clean and modern websites.</p>
+
+            <div class="mx-4">
+                <hr class="border-t-2 border-dashed border-gray-300 my-8">
+                <h2 class="text-lg font-bold mb-4">Twitter Buzz</h2>
+                <div>
+                    <p class="text-gray-600">7 Photoshop tips for designing clean and modern websites 
+                        <a href="url" target="_blank" class="text-green-500">su.pr/1ruOpp</a>
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <button class="bg-gray-300 text-black py-1 px-4 rounded-md">
+                        1 day ago
+                    </button>
+                </div>
+                <hr class="border-t-2 border-dashed border-gray-300 my-8">
+                <div>
+                    <p class="text-gray-600">7 Photoshop tips for designing clean and modern websites 
+                        <a href="Url" target="_blank" class="text-green-500">su.pr/1ruOpp</a>
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <button class="bg-gray-300 text-black py-1 px-4 rounded-md">
+                        1 day ago
+                    </button>
+                </div>
             </div>
-            <div>
-                <h2 class="text-lg font-semibold mb-4">Other Pages</h2>
+
+            <div class="mx-4">
+                <hr class="border-t-2 border-dashed border-gray-300 my-8">
+                <h2 class="text-lg font-bold mb-4">Other Pages</h2>
                 <ul>
-                <li><a href="#" class="text-gray-600">Home</a></li>
-                <li><a href="#" class="text-gray-600">About Our Deals</a></li>
-                <li><a href="#" class="text-gray-600">All Deals</a></li>
-                <li><a href="#" class="text-gray-600">Contact</a></li>
+                <li><a href="#" class="text-green-600">Home</a></li>
+                <hr class="border-t-2 border-dashed border-gray-300 my-4">
+                <li><a href="#" class="text-green-600">About Our Deals</a></li>
+                <hr class="border-t-2 border-dashed border-gray-300 my-4">
+                <li><a href="#" class="text-green-600">All Deals</a></li>
+                <hr class="border-t-2 border-dashed border-gray-300 my-4">
+                <li><a href="#" class="text-green-600">Contact</a></li>
+                <hr class="border-t-2 border-dashed border-gray-300 my-4">
                 </ul>
             </div>
         </div>
@@ -157,10 +251,10 @@
     </div>
 
   <!-- Footer Section -->
-    <footer class="mt-10 py-6 text-center">
-        <p>
+    <footer class="mt-4 py-6 text-center">
+        <p class="text-gray-400">
             Copyright Information Goes Here 2012. All Rights Reserved.<br>
-            Designed by <strong class="font-bold">Themes Kingdom</strong>
+            Designed by <strong class="font-bold text-black">Themes Kingdom</strong>
         </p>
     </footer>
 </body>
