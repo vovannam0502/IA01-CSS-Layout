@@ -5,3 +5,26 @@
 .font-bebas-neue {
     font-family: 'Bebas Neue', cursive;
 }
+
+.envelop-border {
+    background-image: url('./images/envelop-border.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 8px;
+}
+
+.stamp-background {
+    background-image: url('./images/stamp.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subscribe-button {
+    background-image: linear-gradient(to bottom, #acb4bf 50%, #979eac 50%);
+}
+
+.custom-button {
+    border-radius: 16px; 
+    background-image: linear-gradient(to bottom, #51ce3e 50%, #48b737 50%);
+}

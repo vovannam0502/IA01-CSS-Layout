@@ -7,19 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- link file style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
     <!-- Header -->
     <header>
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Left Section: Logo and Navigation -->
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="flex flex-col">
-                <!-- Logo -->
-                <div class="font-yellowtail text-8xl mt-8">Dealers</div>
-        
-                <!-- Navigation -->
+                <div class="font-yellowtail text-4xl md:text-8xl mt-8">Dealers</div>
+
                 <nav class="flex items-center space-x-3 mt-2">
                     <a href="#" class="text-black-600 font-bold">Home</a>
                     <span class="text-black-600 mx-2">|</span>
@@ -30,17 +26,16 @@
                     <a href="#" class="text-black-600 font-bold">Submit Your Deal</a>
                     <span class="text-black-600 mx-2">|</span>
                     <img src="./images/envelop.png" 
-                    alt="Envelope" class="w-6 h-6 inline-block  ">
+                    alt="Envelope" class="w-6 h-6 inline-block">
                 </nav>
                 
             </div>
         
-            <!-- Right Section: Image -->
-            <div class="mt-4 p-4 bg-white shadow-md border-t-8 border-red-500 relative mt-8">
+            <div class="mt-4 p-4 md:p-6 bg-white shadow-md relative envelop-border">
                 <h2 class="text-lg font-bold mb-4">Sign up for free to get deals directly to your mailbox</h2>
-                <form class="flex space-x-2">
-                    <input type="email" placeholder="Enter Your E-mail Address" class="border border-gray-300 px-2 py-1 w-2/3">
-                    <button class="bg-gray-300 text-white px-2 py-1">Subscribe Me</button>
+                <form class="flex flex-col md:flex-row space-y-2 md:space-y-0 space-x-0 md:space-x-2">
+                    <input type="email" placeholder="Enter Your E-mail Address" class="border border-gray-300 px-2 py-1 w-full md:w-2/3">
+                    <button class="bg-gray-500 text-gray-800 font-bold px-2 py-1 w-full md:w-auto border border-gray-300 rounded-md subcribe-button">Subscribe Me</button>
                 </form>
             </div>
         </div>
@@ -49,7 +44,7 @@
     <div class="container mx-auto mt-12 bg-white p-6 shadow-md">
         <!-- Main Deal Section -->
         <section class="container mx-4 mt-2">
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Deal Info -->
                 <div class="col-span-2">
                     <h1 class="text-4xl font-semibold mb-8">This is one very amazing deal</h1>
@@ -57,8 +52,7 @@
                 </div>
 
                 <!-- Deal Details -->
-                <div class="bg-white p-6 mx-8" style="background-image: url('images/stamp.png');
-                background-size: 100% 100%; background-position: center; background-repeat: no-repeat;">
+                <div class="bg-white p-6 mx-2 md:mx-4 stamp-background">
                     <div class="mt-4 mb-1 text-xl font-bold text-center text-gray-600">This deal will end in:</div>
                     <div class="flex flex-col items-center mt-4">
                         <hr class="border-t-2 border-gray-200 w-full">
@@ -70,7 +64,7 @@
                         <hr class="border-t-2 border-gray-200 w-full mt-1">
                     </div>
                     <div class="text-xl font-bold text-gray-600 mt-2 text-center">Discount</div>
-                    <div class="text-8xl font-bold text-gray-800 mb-4 text-center">43%</div>
+                    <div class="text-4xl md:text-8xl font-bold text-gray-800 mb-4 text-center">43%</div>
                     <hr class="border-t-2 border-dashed border-gray-200 mx-4 mb-2">
                     <div class="grid grid-cols-2 gap-6">
                         <div class="text-lg mb-2 text-center">
@@ -83,19 +77,40 @@
                         </div>
                     </div>
                     <hr class="border-t-2 border-dashed border-gray-200 mx-4">
+                    
                     <div class="grid grid-cols-2 gap-6 mt-4">
-                        <div class="text-center">
-                            <button class="bg-gray-300 p-2 rounded"><i class="fab fa-twitter"></i> Tweet</button>
+                        <div class="flex justify-center items-center ml-3">
+                            <div class="flex items-center">
+                                <button class="bg-gray-300 p-1 rounded flex items-center">
+                                    <img src="./images/twitter-logo.png" alt="Twitter Logo" class="w-6 h-6">
+                                    Tweet
+                                </button>
+                                <div class="relative">
+                                    <img src="./images/noti.png" alt="Notification Icon" class="w-12 h-12">
+                                    <span class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-xs font-bold text-black">9</span>
+                                </div>
+                            </div>
                         </div>
-                
-                        <div class="text-center">
-                            <button class="bg-gray-300 p-2 rounded"><i class="fab fa-facebook"></i> Like</button>
+                    
+                        <div class="flex justify-center items-center ml-3">
+                            <div class="flex items-center">
+                                <button class="bg-gray-300 p-1 rounded flex items-center">
+                                    <img src="./images/facebook-logo.png" alt="Facebook Logo" class="w-6 h-6">
+                                    Like
+                                </button>
+                    
+                                <div class="relative">
+                                    <img src="./images/noti.png" alt="Notification Icon" class="w-12 h-12">
+                                    <span class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-xs font-bold text-black">5</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <div class="col-span-2">
                     <p class="text-gray-600 mt-8">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -103,7 +118,7 @@
                     </p>
                 </div>
                 <div class="flex justify-center mt-6">
-                    <button class="bg-lime-600 text-lime-950 font-bold text-xl py-2 px-4 w-4/5" style="border-radius: 16px;">
+                    <button class="bg-lime-600 text-lime-950 font-bold text-xl py-2 px-4 w-4/5 border-2 border-gray-300 custom-button">
                         Buy this deal - 27$
                     </button>
                 </div>
@@ -112,8 +127,7 @@
 
         <hr class="border-t-2 border-dashed border-gray-300 mx-4 my-8">
 
-        <div class="flex justify-between w-full mx-4">
-            <!-- font yellowtail -->
+        <div class="flex flex-col sm:flex-row justify-between w-full mx-4">
             <span class="flex-1 text-center font-yellowtail text-4xl text-gray-400">Dealers</span>
             <span class="flex-1 text-center font-bebas-neue text-4xl text-gray-400">THEME KINGDOM</span>
             <span class="flex-1 text-center text-4xl text-gray-400">DovesMedic</span>
@@ -125,7 +139,7 @@
 
     <!-- Additional Deals Section -->
         <section class="container mx-auto">
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Single Deal -->
                 <div class="bg-white p-4 text-left">
                     <div class="text-xl font-semibold mb-4">Lorem Ipsum Dolor Deal</div>
@@ -197,7 +211,7 @@
             
         </section>
 
-        <div class="container mx-auto grid grid-cols-3 gap-6">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
             <div class="mx-4">
                 <hr class="border-t-2 border-dashed border-gray-300 my-8">
                 <h2 class="text-lg font-bold mb-4">About Our Deals</h2>
@@ -211,7 +225,7 @@
                 <h2 class="text-lg font-bold mb-4">Twitter Buzz</h2>
                 <div>
                     <p class="text-gray-600">7 Photoshop tips for designing clean and modern websites 
-                        <a href="url" target="_blank" class="text-green-500">su.pr/1ruOpp</a>
+                        <a href="su.pr/1ruOpp" target="_blank" class="text-green-500">su.pr/1ruOpp</a>
                     </p>
                 </div>
                 <div class="mt-4">
@@ -222,7 +236,7 @@
                 <hr class="border-t-2 border-dashed border-gray-300 my-8">
                 <div>
                     <p class="text-gray-600">7 Photoshop tips for designing clean and modern websites 
-                        <a href="Url" target="_blank" class="text-green-500">su.pr/1ruOpp</a>
+                        <a href="su.pr/1ruOpp" target="_blank" class="text-green-500">su.pr/1ruOpp</a>
                     </p>
                 </div>
                 <div class="mt-4">
@@ -235,7 +249,6 @@
             <div class="mx-4">
                 <hr class="border-t-2 border-dashed border-gray-300 my-8">
                 <h2 class="text-lg font-bold mb-4">Other Pages</h2>
-                <ul>
                 <li><a href="#" class="text-green-600">Home</a></li>
                 <hr class="border-t-2 border-dashed border-gray-300 my-4">
                 <li><a href="#" class="text-green-600">About Our Deals</a></li>
@@ -250,7 +263,7 @@
         
     </div>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
     <footer class="mt-4 py-6 text-center">
         <p class="text-gray-400">
             Copyright Information Goes Here 2012. All Rights Reserved.<br>
